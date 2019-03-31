@@ -1,6 +1,7 @@
 # Rebecca Turley, 2019-03-30
 # Fisher's Iris Dataset
 
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import sklearn 
