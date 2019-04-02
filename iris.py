@@ -12,18 +12,55 @@ firstcol = data[:,0]
 meanfirstool = np.mean(data[:,0])
 print ("Average of first column is:", meanfirstool)
 
-seconcol = data[:,0]
+seconcol = data[:,1]
 meansecontool = np.mean(data[:,1])
 print ("Average of second column is:", meansecontool)
 
-thrdcol = data[:,0]
+thrdcol = data[:,2]
 meanthrdtool = np.mean(data[:,2])
 print ("Average of third column is:", meanthrdtool)
 
-fourcol = data[:,0]
+fourcol = data[:,3]
 meanfourtool = np.mean(data[:,3])
 print ("Average of fourth column is:", meanfourtool)
 
+print (firstcol)
+
+print (np.min(firstcol))
+
+print (np.max(firstcol))
+
+print (seconcol)
+
+print (np.min(seconcol))
+
+print (np.max(seconcol))
+
+print (thrdcol)
+
+print (np.min(thrdcol))
+
+print (np.max(thrdcol))
+
+print (fourcol)
+
+print (np.min(fourcol))
+
+print (np.max(fourcol))
+
+import matplotlib.pyplot as pl
+
+pl.hist(firstcol)
+pl.show ()
+
+pl.hist(seconcol)
+pl.show ()
+
+pl.hist(thrdcol)
+pl.show ()
+
+pl.hist(fourcol)
+pl.show ()
 
 
 #print(data)
