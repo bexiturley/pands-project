@@ -62,9 +62,26 @@ pl.show ()
 pl.hist(fourcol)
 pl.show ()
 
+print (data.shape)
+#to look at the data ie. how many lines and columns
 
-#print(data)
+import seaborn as sns
+data = sns.load_dataset("iris")
+print(data.head())
+#load the iris data from the seaborne’s builtin dataset  and print first 5 rows
+
+print(data.describe())
+#print some summary statistics
+
+(data['species'].unique())
+print(data.groupby('species').size())
+#names of the iris and how many of each
+
+summary = data.describe()
+summary = summary.transpose()
+print (summary.head())
+
 
 # References:
 
-# https://www.shanelynn.ie/python-pandas-read_csv-load-data-from-csv-files/
+# https://www.shanelynn.ie/python-pandas-read_csv-load-data-from-csv-files/, http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.describe.html
