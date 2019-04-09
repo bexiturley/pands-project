@@ -81,7 +81,51 @@ summary = data.describe()
 summary = summary.transpose()
 print (summary.head())
 
+import seaborn as sns
+import matplotlib.pyplot as plt
+sns.set(style="whitegrid", palette="GnBu_d", rc={'figure.figsize':(11.7,8.27)})
+
+title="Compare the Distributions of Sepal Length"
+
+sns.boxplot(x="species", y="sepal_length", data=data)
+
+# increasing font size
+plt.title(title, fontsize=26)
+# Show the plot
+plt.show()
+
+
+
+
+
+import matplotlib.pyplot as plt
+from sklearn import datasets
+iris= datasets.load_iris()
+
+fig, axes = plt.subplots(nrows= 2, ncols=2)
+colors= ['blue', 'red', 'green']
+
+for i, ax in enumerate(axes.flat):
+    for label, color in zip(range(len(iris.target_names)), colors):
+        ax.hist(iris.data[iris.target==label, i], label=             
+                            iris.target_names[label], color=color)
+        ax.set_xlabel(iris.feature_names[i])  
+        ax.legend(loc='upper right')
+
+
+plt.show()
+
+import pandas as pd
+from pandas.plotting import parallel_coordinates
+
+data = pd.read_csv('iris2.csv', delimiter=',')
+parallel_coordinates(data, 'Name' )
+plt.show()
+#The use of Parallel Coordinates to view all the data from the 4 categories to give a quick visual.  I created another csv file with a slightly amended name as this iris2 file had headings which the other one didnt.  
+
+
 
 # References:
 
 # https://www.shanelynn.ie/python-pandas-read_csv-load-data-from-csv-files/, http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.describe.html
+# http://statweb.stanford.edu/~jtaylo/courses/stats202/visualization.html, http://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html
