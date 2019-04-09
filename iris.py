@@ -51,16 +51,21 @@ print (np.max(fourcol))
 import matplotlib.pyplot as pl
 
 pl.hist(firstcol)
+pl.title ("Sepal Lenght")
 pl.show ()
-
+# histogram of each input variable to get an idea of the distribution
 pl.hist(seconcol)
+pl.title ("Sepal Width")
 pl.show ()
-
+# histogram of each input variable to get an idea of the distribution
 pl.hist(thrdcol)
+pl.title ("Petal Lenght")
 pl.show ()
-
+# histogram of each input variable to get an idea of the distribution
 pl.hist(fourcol)
+pl.title ("Sepal Width")
 pl.show ()
+# histogram of each input variable to get an idea of the distribution
 
 print (data.shape)
 #to look at the data ie. how many lines and columns
@@ -118,6 +123,7 @@ plt.show()
 import pandas as pd
 from pandas.plotting import parallel_coordinates
 
+
 data = pd.read_csv('iris2.csv', delimiter=',')
 parallel_coordinates(data, 'Name' )
 plt.show()
@@ -129,3 +135,4 @@ plt.show()
 
 # https://www.shanelynn.ie/python-pandas-read_csv-load-data-from-csv-files/, http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.describe.html
 # http://statweb.stanford.edu/~jtaylo/courses/stats202/visualization.html, http://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html
+# https://matplotlib.org/users/pyplot_tutorial.html, https://matplotlib.org/users/pyplot_tutorial.html
