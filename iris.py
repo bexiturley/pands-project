@@ -88,7 +88,7 @@ print (summary.head())
 
 import seaborn as sns
 import matplotlib.pyplot as plt
-sns.set(style="whitegrid", palette="GnBu_d", rc={'figure.figsize':(11.7,8.27)})
+sns.set(style="whitegrid", palette="cubehelix", rc={'figure.figsize':(11.7,8.27)})
 
 title="Compare the Distributions of Sepal Length"
 
@@ -99,6 +99,50 @@ plt.title(title, fontsize=26)
 # Show the plot
 plt.show()
 
+import seaborn as sns
+import matplotlib.pyplot as plt
+sns.set(style="whitegrid", palette="cubehelix", rc={'figure.figsize':(11.7,8.27)})
+
+title="Compare the Distributions of Sepal Width"
+
+sns.boxplot(x="species", y="sepal_width", data=data)
+
+# increasing font size
+plt.title(title, fontsize=26)
+# Show the plot
+plt.show()
+
+
+import seaborn as sns
+import matplotlib.pyplot as plt
+sns.set(style="whitegrid", palette="cubehelix", rc={'figure.figsize':(11.7,8.27)})
+
+title="Compare the Distributions of Petal Length"
+
+sns.boxplot(x="species", y="petal_length", data=data)
+
+# increasing font size
+plt.title(title, fontsize=26)
+# Show the plot
+plt.show()
+
+
+
+import seaborn as sns
+import matplotlib.pyplot as plt
+sns.set(style="whitegrid", palette="cubehelix", rc={'figure.figsize':(11.7,8.27)})
+
+title="Compare the distributions of Petal Width"
+
+sns.boxplot(x="species", y="petal_width", data=data)
+
+# increasing font size
+plt.title(title, fontsize=26)
+# Show the plot
+plt.show()
+
+
+
 
 
 
@@ -108,7 +152,7 @@ from sklearn import datasets
 iris= datasets.load_iris()
 
 fig, axes = plt.subplots(nrows= 2, ncols=2)
-colors= ['blue', 'red', 'green']
+colors= ['orange', 'pink', 'purple']
 
 for i, ax in enumerate(axes.flat):
     for label, color in zip(range(len(iris.target_names)), colors):
@@ -128,6 +172,7 @@ data = pd.read_csv('iris2.csv', delimiter=',')
 parallel_coordinates(data, 'Name' )
 plt.show()
 #The use of Parallel Coordinates to view all the data from the 4 categories to give a quick visual.  I created another csv file with a slightly amended name as this iris2 file had headings which the other one didnt.  
+
 
 
 
