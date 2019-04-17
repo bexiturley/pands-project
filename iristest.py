@@ -48,27 +48,6 @@ print (np.min(fourcol))
 
 print (np.max(fourcol))
 
-import seaborn as sns
-data = sns.load_dataset("iris")
-print(data.describe())
-#print some summary statistics
-
-summary = data.describe()
-summary = summary.transpose()
-print (summary.head())
-
-
-data = sns.load_dataset("iris")
-print(data.head())
-#load the iris data from the seaborne’s builtin dataset  and print first 5 rows
-
-print (data.shape)
-#to look at the data ie. how many lines and columns
-
-(data['species'].unique())
-print(data.groupby('species').size())
-#names of the iris and how many of each
-
 import matplotlib.pyplot as pl
 
 pl.hist(firstcol)
@@ -88,24 +67,21 @@ pl.title ("Sepal Width")
 pl.show ()
 # histogram of each input variable to get an idea of the distribution
 
+print (data.shape)
+#to look at the data ie. how many lines and columns
 
-#I have redone the above histograms with the each species in different colours to give a better picture of the breakdown all on one page.
-import matplotlib.pyplot as plt
-from sklearn import datasets
-iris= datasets.load_iris()
+import seaborn as sns
+data = sns.load_dataset("iris")
+print(data.head())
+#load the iris data from the seaborne’s builtin dataset  and print first 5 rows
 
-fig, axes = plt.subplots(nrows= 2, ncols=2)
-colors= ['orange', 'pink', 'purple']
+print(data.describe())
+#print some summary statistics
 
-for i, ax in enumerate(axes.flat):
-    for label, color in zip(range(len(iris.target_names)), colors):
-        ax.hist(iris.data[iris.target==label, i], label=             
-                            iris.target_names[label], color=color)
-        ax.set_xlabel(iris.feature_names[i])  
-        ax.legend(loc='upper right')
+(data['species'].unique())
+print(data.groupby('species').size())
+#names of the iris and how many of each
 
-
-plt.show()
 
 
 #Boxplots
@@ -157,6 +133,10 @@ plt.title(title, fontsize=26)
 # Show the plot
 plt.show()
 
+#Looking at the boxplots, it becomes apparent that there are large variations in the differences in all four catogeries.  This would indicate that it should be easier to differentiate between the species based on the width and lenghts.
+
+
+
 import seaborn as sns
 import matplotlib.pyplot as plt
 sns.set(style="whitegrid", palette="cubehelix", rc={'figure.figsize':(11.7,8.27)})
@@ -170,7 +150,28 @@ plt.title(title, fontsize=26)
 # Show the plot
 plt.show()
 
-#Looking at the boxplots, it becomes apparent that there are large variations in the differences in all four catogeries.  This would indicate that it should be easier to differentiate between the species based on the width and lenghts.
+
+
+
+
+
+
+import matplotlib.pyplot as plt
+from sklearn import datasets
+iris= datasets.load_iris()
+
+fig, axes = plt.subplots(nrows= 2, ncols=2)
+colors= ['orange', 'pink', 'purple']
+
+for i, ax in enumerate(axes.flat):
+    for label, color in zip(range(len(iris.target_names)), colors):
+        ax.hist(iris.data[iris.target==label, i], label=             
+                            iris.target_names[label], color=color)
+        ax.set_xlabel(iris.feature_names[i])  
+        ax.legend(loc='upper right')
+
+
+plt.show()
 
 import pandas as pd
 from pandas.plotting import parallel_coordinates
@@ -179,13 +180,13 @@ from pandas.plotting import parallel_coordinates
 data = pd.read_csv('iris2.csv', delimiter=',')
 parallel_coordinates(data, 'Name' )
 plt.show()
-#The use of Parallel Coordinates to view all the data from the 4 categories to give a quick visual.  I created another csv file with a slightly amended name as this iris2 file had headings which the other one didnt. 
-
+#The use of Parallel Coordinates to view all the data from the 4 categories to give a quick visual.  I created another csv file with a slightly amended name as this iris2 file had headings which the other one didnt.  
 
 
 #Scatterplots
 #Variables are used to show that there is a noticeable difference in sizes between the species. Firstly, we look at the Sepal lenght and Sepal width across the species. 
 #The iris Setosa has a significantly smaller sepal width and sepal length than the other two species. This difference repeats for the Petal width and Petal length. The Iris Viginica is the largest species in both.
+
 import matplotlib.pyplot as plt
 import seaborn as sns
 iris = sns.load_dataset("iris")
@@ -209,6 +210,8 @@ for name, group in iris.groupby("species"):
 
 plt.legend()
 plt.show()
+
+
 
 
 # References:
