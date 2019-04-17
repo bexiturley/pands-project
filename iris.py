@@ -211,23 +211,26 @@ ratio = iris["petal_length"]/iris["petal_width"]
 for name, group in iris.groupby("species"):
    plt.scatter(group.index, ratio[group.index], label=name)
 
-
-
 plt.title ("Petal Length & Width")
 plt.legend()
 plt.show()
 
 
 
-
-
-
-
+# Here I am using Seaborn to create scatterplot graphs to give an idea of what the data will show.
+# data into a pandas dataframe first. Creates 2D data view.
+from sklearn.datasets import load_iris, load_digits
+from sklearn.model_selection import train_test_split
+sns.set(style='white', context='notebook', rc={'figure.figsize':(14,10)})
+iris = load_iris()
+iris_df = pd.DataFrame(iris.data, columns=iris.feature_names)
+iris_df['species'] = pd.Series(iris.target).map(dict(zip(range(3),iris.target_names)))
+sns.pairplot(iris_df, hue='species');
 
 
 
 #sckit learn
-# The iris data set already exisits in sklearn so I'm going to reuse it
+# The iris dataset already exists in sklearn here it is just imported in.
 
 from sklearn.datasets import load_iris
 iris = load_iris()
@@ -261,3 +264,4 @@ plt.show()
 # https://matplotlib.org/users/pyplot_tutorial.html, https://matplotlib.org/users/pyplot_tutorial.html, https://matplotlib.org/gallery/subplots_axes_and_figures/demo_tight_layout.html
 # https://seaborn.pydata.org/tutorial/color_palettes.html?highlight=palette, https://stackoverflow.com/questions/45862223/use-different-colors-in-scatterplot-for-iris-dataset
 # https://www.kaggle.com/benhamner/python-data-visualizations, https://stackoverflow.com/questions/45721083/unable-to-plot-4-histograms-of-iris-dataset-features-using-matplotlib
+# https://umap-learn.readthedocs.io/en/latest/basic_usage.html
