@@ -4,7 +4,6 @@
 import numpy as np
 
 data=np.genfromtxt('iris.csv', delimiter=',')
-
 columns = ['sepal_length', 'sepal_width' , 'petal_length', 'petal_width', 'species']
 
 
@@ -230,7 +229,7 @@ sns.pairplot(iris_df, hue='species');
 
 
 #sckit learn
-# The iris dataset already exists in sklearn here it is just imported in.
+# The iris dataset pre-exists in sklearn.
 
 from sklearn.datasets import load_iris
 iris = load_iris()
@@ -257,6 +256,141 @@ plt.show()
 
 
 
+
+
+
+
+print(__doc__)
+
+
+# Code source: Gaël Varoquaux
+# Modified for documentation by Jaques Grobler
+# License: BSD 3 clause
+
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+from sklearn import datasets
+from sklearn.decomposition import PCA
+
+# import iris data
+iris = datasets.load_iris()
+X = iris.data[:, :2]  # we only take the first two features.
+y = iris.target
+
+x_min, x_max = X[:, 0].min() - .5, X[:, 0].max() + .5
+y_min, y_max = X[:, 1].min() - .5, X[:, 1].max() + .5
+
+plt.figure(2, figsize=(8, 6))
+plt.clf()
+
+# Plot the training points
+plt.scatter(X[:, 0], X[:, 1], c=y, cmap=plt.cm.Set1,
+            edgecolor='k')
+plt.xlabel('Sepal length')
+plt.ylabel('Sepal width')
+
+plt.xlim(x_min, x_max)
+plt.ylim(y_min, y_max)
+plt.xticks(())
+plt.yticks(())
+
+# To getter a better understanding of interaction of the dimensions
+# plot the first three PCA dimensions
+fig = plt.figure(1, figsize=(8, 6))
+ax = Axes3D(fig, elev=-150, azim=110)
+X_reduced = PCA(n_components=3).fit_transform(iris.data)
+ax.scatter(X_reduced[:, 0], X_reduced[:, 1], X_reduced[:, 2], c=y,
+           cmap=plt.cm.Set1, edgecolor='k', s=40)
+ax.set_title("First three PCA directions")
+ax.set_xlabel("1st eigenvector")
+ax.w_xaxis.set_ticklabels([])
+ax.set_ylabel("2nd eigenvector")
+ax.w_yaxis.set_ticklabels([])
+ax.set_zlabel("3rd eigenvector")
+ax.w_zaxis.set_ticklabels([])
+
+plt.show()
+
+
+
+
+print(__doc__)
+
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn import datasets
+from sklearn.linear_model import SGDClassifier
+
+# import some data to play with
+iris = datasets.load_iris()
+
+# we only take the first two features. We could
+# avoid this ugly slicing by using a two-dim dataset
+X = iris.data[:, :2]
+y = iris.target
+colors = "bry"
+
+# shuffle
+idx = np.arange(X.shape[0])
+np.random.seed(13)
+np.random.shuffle(idx)
+X = X[idx]
+y = y[idx]
+
+# standardize
+mean = X.mean(axis=0)
+std = X.std(axis=0)
+X = (X - mean) / std
+
+h = .02  # step size in the mesh
+
+clf = SGDClassifier(alpha=0.001, max_iter=100).fit(X, y)
+
+# create a mesh to plot in
+x_min, x_max = X[:, 0].min() - 1, X[:, 0].max() + 1
+y_min, y_max = X[:, 1].min() - 1, X[:, 1].max() + 1
+xx, yy = np.meshgrid(np.arange(x_min, x_max, h),
+                     np.arange(y_min, y_max, h))
+
+# Plot the decision boundary. For that, we will assign a color to each
+# point in the mesh [x_min, x_max]x[y_min, y_max].
+Z = clf.predict(np.c_[xx.ravel(), yy.ravel()])
+# Put the result into a color plot
+Z = Z.reshape(xx.shape)
+cs = plt.contourf(xx, yy, Z, cmap=plt.cm.Paired)
+plt.axis('tight')
+
+# Plot also the training points
+for i, color in zip(clf.classes_, colors):
+    idx = np.where(y == i)
+    plt.scatter(X[idx, 0], X[idx, 1], c=color, label=iris.target_names[i],
+                cmap=plt.cm.Paired, edgecolor='black', s=20)
+plt.title("Decision surface of multi-class SGD")
+plt.axis('tight')
+
+# Plot the three one-against-all classifiers
+xmin, xmax = plt.xlim()
+ymin, ymax = plt.ylim()
+coef = clf.coef_
+intercept = clf.intercept_
+
+
+def plot_hyperplane(c, color):
+    def line(x0):
+        return (-(x0 * coef[c, 0]) - intercept[c]) / coef[c, 1]
+
+    plt.plot([xmin, xmax], [line(xmin), line(xmax)],
+             ls="--", color=color)
+
+
+for i, color in zip(clf.classes_, colors):
+    plot_hyperplane(i, color)
+plt.legend()
+plt.show()
+
+
+
+
 # References:
 
 # https://www.shanelynn.ie/python-pandas-read_csv-load-data-from-csv-files/, http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.describe.html
@@ -265,3 +399,5 @@ plt.show()
 # https://seaborn.pydata.org/tutorial/color_palettes.html?highlight=palette, https://stackoverflow.com/questions/45862223/use-different-colors-in-scatterplot-for-iris-dataset
 # https://www.kaggle.com/benhamner/python-data-visualizations, https://stackoverflow.com/questions/45721083/unable-to-plot-4-histograms-of-iris-dataset-features-using-matplotlib
 # https://umap-learn.readthedocs.io/en/latest/basic_usage.html
+# https://uk.mathworks.com/help/stats/box-plots.html, https://datavizcatalogue.com/methods/parallel_coordinates.html, https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html#sphx-glr-auto-examples-datasets-plot-iris-dataset-py
+# https://scikit-learn.org/stable/auto_examples/linear_model/plot_sgd_iris.html#sphx-glr-auto-examples-linear-model-plot-sgd-iris-py
