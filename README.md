@@ -118,7 +118,7 @@ print(data.groupby('species').size())
 A histogram shows the frequency on the vertical axis and the horizontal axis is another dimension.
 First the Sepal Length, Sepal Width, Petal Length and finally Petal Width.  These graphs give only an outline of information.  
 
-
+![](https://github.com/bexiturley/pands-project/blob/master/Figure_1.png)
 https://github.com/bexiturley/pands-project/blob/master/Figure_1.png
 ![Histograph](C:\Users\Rebecca\Desktop\pands-project/figure1.png)
 
