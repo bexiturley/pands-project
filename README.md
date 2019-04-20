@@ -90,7 +90,7 @@ import seaborn as sns
 data = sns.load_dataset("iris")
 print(data.describe())
 
-This prints the same information but in a linelar format rather than tabular.  Again there is no real need for it but it was my own curiorisity to see the different way to view the information.
+This prints the same information but in a linear format rather than tabular.  Again there is no real need for it but it was my own curiorisity to see the different way to view the information.
 summary = data.describe()
 summary = summary.transpose()
 print (summary.head())
@@ -116,14 +116,24 @@ print(data.groupby('species').size())
 
 ## Histographs
 A histogram shows the frequency on the vertical axis and the horizontal axis is another dimension.
-First the Sepal Lenght, Sepal Width, Petal Lenght and finally Petal Width.  These graphs give only an outline of information.  
+First the Sepal Length, Sepal Width, Petal Length and finally Petal Width.  These graphs give only an outline of information.  
 
-To get more detail I then reproduced the four histograms but this time I gave each species a different colour to more easier differientate betweent them.  And all 4 were placed on the one page, rather than a page each.
+![Histograph](figure1.png)
+
+At first glance it appears that there is a wide variance in the sizes of of the petals and sepals and there is no way to distinguish between the different species of Iris.
+
+To get more detail I then reproduced the four histograms but this time I gave each species a different colour to more easier differentiate between them.  And all 4 were placed on the one page, rather than a page each.  
+
+Here it becomes more apparent that there is a distinct difference between the three Iris.
 
 
 ## Boxplots
-Boxplots are a measure of how well distributed the data in a data set is.  There were four boxplots created; To compare the distributions of Sepal lenght, 
-Sepal Lenght, Petal Lenght and Petal Width.
+Boxplots are a measure of how well distributed the data in a data set is.  There were four boxplots created; To compare the distributions of Sepal length, 
+Sepal Length, Petal Length and Petal Width.
+
+Again it can be seen that each species have distinct properties with relation to the differences in the sepal and petals.  This should make it easier to classify an iris based on the lengths and widths of sepals and petals.
+
+
 
 ## Parallel coordinates. 
 
@@ -131,20 +141,23 @@ Are a common way of visualizing high-dimensional geometry and analyzing multivar
 Values are plotted as a series of lines that connected across all the axes. This means that each line is a collection of points placed on each axis, that have all been connected together.
 
 
+It can be observed that each species (shown in different colors) has a discriminant profiles when considering petal length and width, or that Iris Setosa (here in grey) are more homogeneous in regard to petal length (i.e. less of a variance).
+
+
 ## Scatterplots
 
-The scatterplot it’s pretty obvious right away that the points belong to different groups.  it’s much easier to see the groupings than when we just had all blue! We now know that it’ll probably be easy to separate the classes.  
+The scatterplot it’s pretty obvious right away that the points belong to different groups.  it’s much easier to see the groupings than when we just had all blue! We now know that it’ll probably be easy to separate the classes.  The cluster of Setosa species is separately clustered from the rest.  While Virginica and Versicolor are also separate, it is not to the same degree.
 
 More scatter plots to create an array of 2d images.
 
 ##  Scikit Learn
 Simple and efficient tools for data mining and data analysis.  It is a free machine learning library provided by Python.  From the investigations I undertook during the course of this project
 I came to the conclusion that all the above graphs helped to show the differences in the petals and sepals of the iris.  This is how machine learning begins.  Taking all the above data it becomes much 
-easier to classify the iris via the differences in lenghts and width.  To go one step further is to take the above information see that there is a difference and then put it to use by learning to classify
+easier to classify the iris via the differences in lengths and width.  To go one step further is to take the above information see that there is a difference and then put it to use by learning to classify
 the iris not by how it looks but by giving the computer measurements and letting it decide for itself which species the iris belongs to. That is machine learning or supervised learning.  The data already exists within sickitlearn.  
 
 I used https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html#sphx-glr-auto-examples-datasets-plot-iris-dataset-py
-to show the graph in a 3d format.  It is way beyond my current ability to plot this myself but I thought it was a fantastic to be able to manipulate the data to produce a 3d graph.
+to show the graph in a 3d format.  It is way beyond my current ability to plot this myself but I thought it was a fantastic to be able to manipulate the data to produce a 3d graph.  Spin the scatterplot to see more clearly the relationships between the red and green points.
 
 Following this graph is a 2d representative of it.
 
