@@ -120,10 +120,17 @@ First the Sepal Length, Sepal Width, Petal Length and finally Petal Width.  Thes
 
 ![Histograph](https://github.com/bexiturley/pands-project/blob/master/Figure_1.png)
 
+![Histograph](https://github.com/bexiturley/pands-project/blob/master/Figure_2.png)
+
+![Histograph](https://github.com/bexiturley/pands-project/blob/master/Figure_3.png)
+
+![Histograph](https://github.com/bexiturley/pands-project/blob/master/Figure_4.png)
 
 At first glance it appears that there is a wide variance in the sizes of of the petals and sepals and there is no way to distinguish between the different species of Iris.
 
 To get more detail I then reproduced the four histograms but this time I gave each species a different colour to more easier differentiate between them.  And all 4 were placed on the one page, rather than a page each.  
+
+![Histograph](https://github.com/bexiturley/pands-project/blob/master/Figure_5.png)
 
 Here it becomes more apparent that there is a distinct difference between the three Iris.
 
@@ -131,6 +138,15 @@ Here it becomes more apparent that there is a distinct difference between the th
 ## Boxplots
 Boxplots are a measure of how well distributed the data in a data set is.  There were four boxplots created; To compare the distributions of Sepal length, 
 Sepal Length, Petal Length and Petal Width.
+
+![](https://github.com/bexiturley/pands-project/blob/master/Figure_6.png)
+
+
+![](https://github.com/bexiturley/pands-project/blob/master/Figure_7.png)
+
+![](https://github.com/bexiturley/pands-project/blob/master/Figure_8.png)
+
+![](https://github.com/bexiturley/pands-project/blob/master/Figure_9.png)
 
 Again it can be seen that each species have distinct properties with relation to the differences in the sepal and petals.  This should make it easier to classify an iris based on the lengths and widths of sepals and petals.
 
@@ -141,6 +157,7 @@ Again it can be seen that each species have distinct properties with relation to
 Are a common way of visualizing high-dimensional geometry and analyzing multivariate data.  In a Parallel Coordinates Plot, each variable is given its own axis and all the axes are placed in parallel to each other. Each axis can have a different scale, as each variable works off a different unit of measurement, or all the axes can be normalised to keep all the scales uniform. 
 Values are plotted as a series of lines that connected across all the axes. This means that each line is a collection of points placed on each axis, that have all been connected together.
 
+![](https://github.com/bexiturley/pands-project/blob/master/Figure_10.png)
 
 It can be observed that each species (shown in different colors) has a discriminant profiles when considering petal length and width, or that Iris Setosa (here in grey) are more homogeneous in regard to petal length (i.e. less of a variance).
 
@@ -149,7 +166,15 @@ It can be observed that each species (shown in different colors) has a discrimin
 
 The scatterplot it’s pretty obvious right away that the points belong to different groups.  it’s much easier to see the groupings than when we just had all blue! We now know that it’ll probably be easy to separate the classes.  The cluster of Setosa species is separately clustered from the rest.  While Virginica and Versicolor are also separate, it is not to the same degree.
 
+![](https://github.com/bexiturley/pands-project/blob/master/Figure_11.png)
+
+![](https://github.com/bexiturley/pands-project/blob/master/Figure_12.png)
+
 More scatter plots to create an array of 2d images.
+
+![](https://github.com/bexiturley/pands-project/blob/master/Figure_13.png)
+
+
 
 ##  Scikit Learn
 Simple and efficient tools for data mining and data analysis.  It is a free machine learning library provided by Python.  From the investigations I undertook during the course of this project
@@ -157,12 +182,20 @@ I came to the conclusion that all the above graphs helped to show the difference
 easier to classify the iris via the differences in lengths and width.  To go one step further is to take the above information see that there is a difference and then put it to use by learning to classify
 the iris not by how it looks but by giving the computer measurements and letting it decide for itself which species the iris belongs to. That is machine learning or supervised learning.  The data already exists within sickitlearn.  
 
+
+
+![](https://github.com/bexiturley/pands-project/blob/master/Figure_15.png)
+
 I used https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html#sphx-glr-auto-examples-datasets-plot-iris-dataset-py
 to show the graph in a 3d format.  It is way beyond my current ability to plot this myself but I thought it was a fantastic to be able to manipulate the data to produce a 3d graph.  Spin the scatterplot to see more clearly the relationships between the red and green points.
 
 Following this graph is a 2d representative of it.
 
+![](https://github.com/bexiturley/pands-project/blob/master/Figure_14.png)
+
 ## Decision Surface of multi-class SGD
+
+![](https://github.com/bexiturley/pands-project/blob/master/Figure_17.png)
 
 The dashed lines represent the three OVA classifiers; the background colors show the decision surface induced by the three classifiers.
 
