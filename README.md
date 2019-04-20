@@ -119,7 +119,7 @@ A histogram shows the frequency on the vertical axis and the horizontal axis is 
 First the Sepal Length, Sepal Width, Petal Length and finally Petal Width.  These graphs give only an outline of information.  
 
 
-
+https://github.com/bexiturley/pands-project/blob/master/Figure_1.png
 ![Histograph](C:\Users\Rebecca\Desktop\pands-project/figure1.png)
 
 At first glance it appears that there is a wide variance in the sizes of of the petals and sepals and there is no way to distinguish between the different species of Iris.
