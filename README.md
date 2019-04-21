@@ -7,6 +7,8 @@ Fisher’s Iris Dataset refers to three species of iris; Iris Setosa, Iris Versi
 
 It is also known as Andersons dataset as Edgar Anderson collected the data. 
 
+***
+
 ![](https://github.com/bexiturley/pands-project/blob/master/iris.jpg)
 
 The dataset contains a set of 150 records under 5 attributes -
@@ -20,7 +22,8 @@ The dataset contains a set of 150 records under 5 attributes -
 -- Iris Versicolour 
 -- Iris Virginica
 
-![iris](assets/irises.png)
+
+***
 
 ## Libraries used 
 The following are the libraries which were used for the project;
@@ -113,7 +116,7 @@ print (data.shape)
 
 (data['species'].unique())
 print(data.groupby('species').size())
-# The type int64 tells us that python is storing each value within this column as a 64 bit integer.
+## The type int64 tells us that python is storing each value within this column as a 64 bit integer.
 
 
 ## Histographs
