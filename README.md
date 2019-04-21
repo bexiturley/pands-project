@@ -66,7 +66,7 @@ Print out all the information grouped by column and calculate average of each co
 *meanfourtool = np.mean(data[:,3])*
 *print ("Average of fourth column is:", meanfourtool)*
 
-*Print out the smallest and largest value in each of the 4 columns*
+Print out the smallest and largest value in each of the 4 columns
 *print (firstcol)*
 
 *print (np.min(firstcol))*
@@ -95,6 +95,7 @@ Print out all the information grouped by column and calculate average of each co
 
 ## More averages of the four columns 
 Including how many items there are per columns, the mean, minimum and maximum.  I know this has already been partly covered already but I liked to try different ways to view the same information via seaborn.
+
 
 
 *import seaborn as sns*
@@ -130,7 +131,7 @@ This prints the same information but in a linear format rather than tabular.  Ag
 *print(data.groupby('species').size())*
 
 
-### The type int64 tells us that python is storing each value within this column as a 64 bit integer.
+###### The type int64 tells us that python is storing each value within this column as a 64 bit integer.
 
 ***
 
@@ -209,7 +210,7 @@ the iris not by how it looks but by giving the computer measurements and letting
 ![](https://github.com/bexiturley/pands-project/blob/master/Figure_15.png)
 
 I used https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html#sphx-glr-auto-examples-datasets-plot-iris-dataset-py
-to show the graph in a 3d format.  It is way beyond my current ability to plot this myself but I thought it was a fantastic to be able to manipulate the data to produce a 3d graph.  Spin the scatterplot to see more clearly the relationships between the red and green points.
+to show the graph in a 3d format.  It is way beyond my current ability to plot this myself but I thought it was a fantastic to be able to manipulate the data to produce a 3d graph.  ######Spin the scatterplot to see more clearly the relationships between the red and green points. This function works when the iris.py script is run in Python.
 
 Following this graph is a 2d representative of it.
 
