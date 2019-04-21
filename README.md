@@ -15,7 +15,7 @@ See here for the instructions (https://github.com/ianmcloughlin/project-pands/ra
 3. On the command line type Python followed by the name of the file whose script you wish to run.  Make sure to enter .py at the end.
 
 
-
+<p align="center">
 <img src=https://github.com/bexiturley/pands-project/blob/master/ronald-fisher.jpg width="200" height="250">
 
 Sir Ronald Aylmer Fisher was a statistician who studied in Cambridge.  Throughout his life he published many texts which were significant in the field of statistics.  This included Statistical Methods for Research Workers (1925) which was a handbook for the methods for the design and analysis of experiments. The contributions Fisher made included the development of methods suitable for small samples and the discovery of the precise distributions of many sample statistics. Fisher published “The design of experiments” (1935) and “Statistical tables” (1947). His books had a huge effect on agricultural research as they described the methods for evaluating the results of small sample experiments and for so laying our experimental trials as to minimise the disturbances due to heterogeneity of soils and the unavoidable irregularity of biological material. This method was used throughout the world.  In 1930, he published his theories about gene dominance and fitness which in The Genetical Theory of Natural Selection. 
