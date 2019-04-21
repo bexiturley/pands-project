@@ -181,6 +181,39 @@ plt.show()
 
 
 
+# Fitting clasifier to the Training set
+# Loading libraries
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.metrics import confusion_matrix, accuracy_score
+from sklearn.model_selection import cross_val_score
+
+from sklearn.model_selection import train_test_split
+#Add this line before classifier.fit()
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33, random_state=42)
+
+# Instantiate learning model (k = 3)
+classifier = KNeighborsClassifier(n_neighbors=3)
+
+# Fitting the model
+classifier.fit(X_train, y_train)
+
+# Predicting the Test set results
+y_pred = classifier.predict(X_test)
+
+cm = confusion_matrix(y_test, y_pred)
+cm
+
+accuracy = accuracy_score(y_test, y_pred)*100
+print('Accuracy of our model is equal ' + str(round(accuracy, 2)) + ' %.')
+
+plt.tight_layout()
+plt.show()
+
+
+
+
+
 # References:
 
 # https://www.shanelynn.ie/python-pandas-read_csv-load-data-from-csv-files/, http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.describe.html
@@ -207,46 +240,8 @@ plt.show()
 
 
 
-# Calculate the mean of each column
-#import pandas as pd
-#import numpy as np
-#data = np.genfromtxt('iris.csv', delimiter=',')
-#print(data.head())
-#iris.columns = ['sepal_length', 'sepal_width' , 'petal_length', 'petal_width', 'species']
-#print (data)
 
 
 
 
-# Load libraries
-import pandas
-from pandas.plotting import scatter_matrix
-import matplotlib.pyplot as plt
-from sklearn import model_selection
-from sklearn.metrics import classification_report
-from sklearn.metrics import confusion_matrix
-from sklearn.metrics import accuracy_score
-from sklearn.linear_model import LogisticRegression
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
-from sklearn.naive_bayes import GaussianNB
-from sklearn.svm import SVC
 
-#data = numpy.genfromtxt('iris.csv', delimiter=',')
-#names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class']
-#print(data.head())
-
-
-# Load dataset
-
-#url = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/iris.csv"
-names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class']
-#data = numpy.genfromtxt('iris.csv', columns=iris_dataset["feature_names"])
-#dataset = pandas.read_csv(url, names=names)
-
-# shape
-print(dataset.shape)
-
-# head
-print(dataset.head(20))
