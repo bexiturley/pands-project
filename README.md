@@ -50,7 +50,7 @@ columns = ['sepal_length', 'sepal_width' , 'petal_length', 'petal_width', 'speci
 ## Quick look at the data
 Print out all the information grouped by column and calculate average of each column
 
-firstcol = data[:,0]
+*firstcol = data[:,0]
 meanfirstool = np.mean(data[:,0])
 print ("Average of first column is:", meanfirstool)
 
@@ -89,28 +89,28 @@ print (fourcol)
 
 print (np.min(fourcol))
 
-print (np.max(fourcol))
+print (np.max(fourcol))*
 
 ***
 
 ## More averages of the four columns 
 Including how many items there are per columns, the mean, minimum and maximum.  I know this has already been partly covered already but I liked to try different ways to view the same information via seaborn.
 
-import seaborn as sns
+*import seaborn as sns
 data = sns.load_dataset("iris")
-print(data.describe())
+print(data.describe())*
 
 This prints the same information but in a linear format rather than tabular.  Again there is no real need for it but it was my own curiorisity to see the different way to view the information.
-summary = data.describe()
+*summary = data.describe()
 summary = summary.transpose()
-print (summary.head())
+print (summary.head())*
 
 ***
 
 ## Printing the first 5 columns of the information from the seaborne’s builtin dataset . 
 
-data = sns.load_dataset("iris")
-print(data.head())
+*data = sns.load_dataset("iris")
+print(data.head())*
 
 #you can specific the number to show here (data.head(15))  eg. 15
 
@@ -118,14 +118,14 @@ print(data.head())
 
 ## Looking at the shape of the table, how many lines and columns
 
-print (data.shape)
+*print (data.shape)*
 
 ***
 
 ## The different names of the Iris and how many there is 
 
-(data['species'].unique())
-print(data.groupby('species').size())
+*(data['species'].unique())
+print(data.groupby('species').size())*
 ### The type int64 tells us that python is storing each value within this column as a 64 bit integer.
 
 ***
