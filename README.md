@@ -210,7 +210,8 @@ the iris not by how it looks but by giving the computer measurements and letting
 ![](https://github.com/bexiturley/pands-project/blob/master/Figure_15.png)
 
 I used https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html#sphx-glr-auto-examples-datasets-plot-iris-dataset-py
-to show the graph in a 3d format.  It is way beyond my current ability to plot this myself but I thought it was a fantastic to be able to manipulate the data to produce a 3d graph.  ######Spin the scatterplot to see more clearly the relationships between the red and green points. This function works when the iris.py script is run in Python.
+to show the graph in a 3d format.  It is way beyond my current ability to plot this myself but I thought it was a fantastic to be able to manipulate the data to produce a 3d graph.  
+######Spin the scatterplot to see more clearly the relationships between the red and green points. This function works when the iris.py script is run in Python.
 
 Following this graph is a 2d representative of it.
 
