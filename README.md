@@ -114,7 +114,7 @@ This prints the same information but in a linear format rather than tabular.  Ag
 *data = sns.load_dataset("iris")*
 *print(data.head())*
 
-### *you can specific the number to show here (data.head(15))  eg. 15*
+##### *you can specific the number to show here (data.head(15))  eg. 15*
 
 ***
 
