@@ -2,7 +2,7 @@
 
 This contains my project submission 2019 for the module Programming and Scripting at GMIT.
 
-See here for the instructions (https://github.com/ianmcloughlin/project-pands/raw/master/project.pdf)
+See here for the instructions (https://github.com/ianmcloughlin/project-pands/raw/master/project.pdf){:height="50%" width="50%"}
 
 ## How to download this repository
 
