@@ -26,8 +26,8 @@ Fisher’s Iris Dataset refers to three species of iris; Iris Setosa, Iris Versi
  :sparkles: It is also known as Andersons dataset as Edgar Anderson collected the data.  :sparkles: 
 
 ***
-
-![](https://github.com/bexiturley/pands-project/blob/master/iris.jpg)
+<p align="center">
+<img src=https://github.com/bexiturley/pands-project/blob/master/iris.jpg width="500" height="250">
 
 The dataset contains a set of 150 records under 5 attributes -
 
