@@ -27,6 +27,10 @@ Fisher’s Iris Dataset refers to three species of iris; Iris Setosa, Iris Versi
 
 ***
 <p align="center">
+
+![flower](https://user-images.githubusercontent.com/47194968/56472909-6e313c00-645c-11e9-80d9-1f4cffd97d85.png)
+
+
 <img src=https://github.com/bexiturley/pands-project/blob/master/iris.jpg width="500" height="250">
 
 The dataset contains a set of 150 records under 5 attributes -
@@ -205,11 +209,14 @@ It can be observed that each species (shown in different colors) has a discrimin
 
 ## Scatterplots
 
-The scatterplot it’s pretty obvious right away that the points belong to different groups.  it’s much easier to see the groupings than when we just had all blue! We now know that it’ll probably be easy to separate the classes.  The cluster of Setosa species is separately clustered from the rest.  While Virginica and Versicolor are also separate, it is not to the same degree.
+Scatter plots are similar to line graphs in that they use horizontal and vertical axes to plot data points. However, they have a very specific purpose. Scatter plots show how much one variable is affected by another. The relationship between two variables is called their correlation .
+
 
 ![](https://github.com/bexiturley/pands-project/blob/master/Figure_11.png)
 
 ![](https://github.com/bexiturley/pands-project/blob/master/Figure_12.png)
+
+It is quite apparent that the points belong to different groups.  Giving each species of Iris a different colour means it is much easier to see the groupings than if only one colour was used.  This will make separating the classes easier.  The cluster of Setosa species is separately clustered from the rest.  While Virginica and Versicolor are also separate, it is not to the same degree.
 
 More scatter plots to create an array of 2d images.
 
@@ -221,7 +228,9 @@ More scatter plots to create an array of 2d images.
 Simple and efficient tools for data mining and data analysis.  It is a free machine learning library provided by Python.  From the investigations I undertook during the course of this project
 I came to the conclusion that all the above graphs helped to show the differences in the petals and sepals of the iris.  This is how machine learning begins.  Taking all the above data it becomes much 
 easier to classify the iris via the differences in lengths and width.  To go one step further is to take the above information see that there is a difference and then put it to use by learning to classify
-the iris not by how it looks but by giving the computer measurements and letting it decide for itself which species the iris belongs to. That is machine learning or supervised learning.  The data already exists within sickitlearn.  
+the iris not by how it looks but by giving the computer measurements and letting it decide for itself which species the iris belongs to. That is machine learning or supervised learning.  
+
+The data already exists within sickitlearn.  
 
 
 
@@ -246,3 +255,5 @@ The dashed lines represent the three OVA classifiers; the background colors show
 The final graph 
 The core of many machine learning algorithms is optimization.  Optimization algorithms are used by machine learning algorithms to find a good set of model parameters given a training dataset.  The most common optimization algorithm used in machine learning is stochastic gradient descent.
 SGD is beneficial when it is not possible to process all the data multiple times because your data is huge.
+
+Following on from this is then letting the computer a key aspect is that it also teaches about over-fitting. There are not enough columns to give a perfect score: we see this immediately when we look at the scatterplots, and they overlap and run into each other. So any machine-learning approach that gets a perfect score can be regarded as suspicious.  The iris data is going to be used to train our model and obtain a high accuracy
