@@ -38,11 +38,15 @@ Scikit-learn is a free software machine learning library for the Python programm
 
 pandas is a software library written for the Python programming language for data manipulation and analysis.
 
+***
+
 ## Data Import
 Import the iris.csv using the panda library 
 
 data=np.genfromtxt('iris.csv', delimiter=',')
 columns = ['sepal_length', 'sepal_width' , 'petal_length', 'petal_width', 'species']
+
+***
 
 ## Quick look at the data
 Print out all the information grouped by column and calculate average of each column
@@ -88,6 +92,8 @@ print (np.min(fourcol))
 
 print (np.max(fourcol))
 
+***
+
 ## More averages of the four columns 
 Including how many items there are per columns, the mean, minimum and maximum.  I know this has already been partly covered already but I liked to try different ways to view the same information via seaborn.
 
@@ -100,6 +106,7 @@ summary = data.describe()
 summary = summary.transpose()
 print (summary.head())
 
+***
 
 ## Printing the first 5 columns of the information from the seaborne’s builtin dataset . 
 
@@ -108,9 +115,13 @@ print(data.head())
 
 #you can specific the number to show here (data.head(15))  eg. 15
 
+***
+
 ## Looking at the shape of the table, how many lines and columns
 
 print (data.shape)
+
+***
 
 ## The different names of the Iris and how many there is 
 
@@ -118,6 +129,7 @@ print (data.shape)
 print(data.groupby('species').size())
 ## The type int64 tells us that python is storing each value within this column as a 64 bit integer.
 
+***
 
 ## Histographs
 A histogram shows the frequency on the vertical axis and the horizontal axis is another dimension.
@@ -139,6 +151,7 @@ To get more detail I then reproduced the four histograms but this time I gave ea
 
 Here it becomes more apparent that there is a distinct difference between the three Iris.
 
+***
 
 ## Boxplots
 Boxplots are a measure of how well distributed the data in a data set is.  There were four boxplots created; To compare the distributions of Sepal length, 
@@ -155,7 +168,7 @@ Sepal Length, Petal Length and Petal Width.
 
 Again it can be seen that each species have distinct properties with relation to the differences in the sepal and petals.  This should make it easier to classify an iris based on the lengths and widths of sepals and petals.
 
-
+***
 
 ## Parallel coordinates. 
 
@@ -166,6 +179,7 @@ Values are plotted as a series of lines that connected across all the axes. This
 
 It can be observed that each species (shown in different colors) has a discriminant profiles when considering petal length and width, or that Iris Setosa (here in grey) are more homogeneous in regard to petal length (i.e. less of a variance).
 
+***
 
 ## Scatterplots
 
@@ -179,7 +193,7 @@ More scatter plots to create an array of 2d images.
 
 ![](https://github.com/bexiturley/pands-project/blob/master/Figure_13.png)
 
-
+***
 
 ##  Scikit Learn
 Simple and efficient tools for data mining and data analysis.  It is a free machine learning library provided by Python.  From the investigations I undertook during the course of this project
@@ -197,6 +211,8 @@ to show the graph in a 3d format.  It is way beyond my current ability to plot t
 Following this graph is a 2d representative of it.
 
 ![](https://github.com/bexiturley/pands-project/blob/master/Figure_14.png)
+
+***
 
 ## Decision Surface of multi-class SGD
 
