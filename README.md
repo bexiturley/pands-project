@@ -43,10 +43,9 @@ pandas is a software library written for the Python programming language for dat
 ## Data Import
 Import the iris.csv using the panda library 
 
-data=np.genfromtxt('iris.csv', delimiter=',')
-columns = ['sepal_length', 'sepal_width' , 'petal_length', 'petal_width', 'species']
+*data=np.genfromtxt('iris.csv', delimiter=',')
+columns = ['sepal_length', 'sepal_width' , 'petal_length', 'petal_width', 'species']*
 
-***
 
 ## Quick look at the data
 Print out all the information grouped by column and calculate average of each column
