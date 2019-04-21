@@ -5,7 +5,7 @@ In 1936 Fisher authored the paper “The use of multiple measurements in taxonom
 
 Fisher’s Iris Dataset refers to three species of iris; Iris Setosa, Iris Versicolour and Iris Virginica.  50 random samples of each variation of the Iris were taken with measurements of the petals and sepals both of their width and length.  All the data was looked at to create five columns in this dataset with the following variable names: Sepal.length, Sepal.width, Petal.length, Petal.width, and Species.  The first four variables are real measurements made in centimetres. Two of the three species were collected in the Gaspé Peninsula, all from the same pasture, and picked on the same day and measured at the same time by the same person with the same apparatus.  Fisher attempted to determine if it was possible to classify which species a flower belonged to from looking at the lengths and width of the petals and sepals. Here is a link to his actual paper on it http://rcs.chemometrics.ru/Tutorials/classification/Fisher.pdf
 
-It is also known as Andersons dataset as Edgar Anderson collected the data. 
+ :sparkles: It is also known as Andersons dataset as Edgar Anderson collected the data.  :sparkles: 
 
 ***
 
@@ -18,9 +18,9 @@ The dataset contains a set of 150 records under 5 attributes -
 3. petal length in cm 
 4. petal width in cm 
 5. Species: 
--- Iris Setosa 
--- Iris Versicolour 
--- Iris Virginica
+- [ ]  Iris Setosa 
+- [ ] Iris Versicolour 
+- [ ] Iris Virginica
 
 
 ***
@@ -127,7 +127,7 @@ print (data.shape)
 
 (data['species'].unique())
 print(data.groupby('species').size())
-## The type int64 tells us that python is storing each value within this column as a 64 bit integer.
+### The type int64 tells us that python is storing each value within this column as a 64 bit integer.
 
 ***
 
