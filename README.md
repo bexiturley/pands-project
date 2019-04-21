@@ -43,53 +43,53 @@ pandas is a software library written for the Python programming language for dat
 ## Data Import
 Import the iris.csv using the panda library 
 
-*data=np.genfromtxt('iris.csv', delimiter=',')
-columns = ['sepal_length', 'sepal_width' , 'petal_length', 'petal_width', 'species']*
+*data=np.genfromtxt('iris.csv', delimiter=',')*
+*columns = ['sepal_length', 'sepal_width' , 'petal_length', 'petal_width', 'species']*
 
 
 ## Quick look at the data
 Print out all the information grouped by column and calculate average of each column
 
-*firstcol = data[:,0]
-meanfirstool = np.mean(data[:,0])
-print ("Average of first column is:", meanfirstool)
+*firstcol = data[:,0]*
+*meanfirstool = np.mean(data[:,0])*
+*print ("Average of first column is:", meanfirstool)*
 
-seconcol = data[:,1]
-meansecontool = np.mean(data[:,1])
-print ("Average of second column is:", meansecontool)
+*seconcol = data[:,1]
+*meansecontool = np.mean(data[:,1])*
+*print ("Average of second column is:", meansecontool)*
 
-thrdcol = data[:,2]
-meanthrdtool = np.mean(data[:,2])
-print ("Average of third column is:", meanthrdtool)
+*thrdcol = data[:,2]*
+*meanthrdtool = np.mean(data[:,2])*
+*print ("Average of third column is:", meanthrdtool)*
 
-fourcol = data[:,3]
-meanfourtool = np.mean(data[:,3])
-print ("Average of fourth column is:", meanfourtool)
+*fourcol = data[:,3]*
+*meanfourtool = np.mean(data[:,3])*
+*print ("Average of fourth column is:", meanfourtool)*
 
-Print out the smallest and largest value in each of the 4 columns
-print (firstcol)
+*Print out the smallest and largest value in each of the 4 columns*
+*print (firstcol)*
 
-print (np.min(firstcol))
+*print (np.min(firstcol))*
 
-print (np.max(firstcol))
+*print (np.max(firstcol))*
 
-print (seconcol)
+*print (seconcol)*
 
-print (np.min(seconcol))
+*print (np.min(seconcol))*
 
-print (np.max(seconcol))
+*print (np.max(seconcol))*
 
-print (thrdcol)
+*print (thrdcol)*
 
-print (np.min(thrdcol))
+*print (np.min(thrdcol))*
 
-print (np.max(thrdcol))
+*print (np.max(thrdcol))*
 
-print (fourcol)
+*print (fourcol)*
 
-print (np.min(fourcol))
+*print (np.min(fourcol))*
 
-print (np.max(fourcol))*
+*print (np.max(fourcol))*
 
 ***
 
