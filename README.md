@@ -31,8 +31,6 @@ Fisher’s Iris Dataset refers to three species of iris; Iris Setosa, Iris Versi
 ![flower](https://user-images.githubusercontent.com/47194968/56472909-6e313c00-645c-11e9-80d9-1f4cffd97d85.png)
 
 
-<img src=https://github.com/bexiturley/pands-project/blob/master/iris.jpg width="500" height="250">
-
 The dataset contains a set of 150 records under 5 attributes -
 
 1. sepal length in cm 
