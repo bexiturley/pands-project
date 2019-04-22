@@ -322,7 +322,7 @@ import matplotlib.pyplot as plt
 from sklearn import datasets
 from sklearn.linear_model import SGDClassifier
 
-# import some data to play with
+# import data
 iris = datasets.load_iris()
 
 # we only take the first two features. We could
