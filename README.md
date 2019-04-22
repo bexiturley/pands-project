@@ -220,6 +220,8 @@ More scatter plots to create an array of 2d images.
 
 ![](https://github.com/bexiturley/pands-project/blob/master/Figure_13.png)
 
+There are not enough columns to give a perfect score: this is apparent when looking at the scatterplots, they overlap and run into each other.  So any machine-learning approach that gets a perfect score can be regarded as flawed.  The iris data can be used to train and obtain a high accuracy.
+
 ***
 
 ##  Scikit Learn
@@ -254,11 +256,12 @@ Following this graph is a 2d representative of it.
 
 The dashed lines represent the three OVA classifiers; the background colors show the decision surface induced by the three classifiers.  The decision boundaries are shown with all the points in the training-set.
 
-The final graph 
+
+
 The core of many machine learning algorithms is optimization.  Optimization algorithms are used by machine learning algorithms to find a good set of model parameters given a training dataset.  The most common optimization algorithm used in machine learning is stochastic gradient descent.
 SGD is beneficial when it is not possible to process all the data multiple times because your data is huge.
 
-Following on from this is then letting the computer a key aspect is that it also teaches about over-fitting. There are not enough columns to give a perfect score: we see this immediately when we look at the scatterplots, and they overlap and run into each other. So any machine-learning approach that gets a perfect score can be regarded as suspicious.  The iris data is going to be used to train our model and obtain a high accuracy.
+Following on from this is then letting the computer a key aspect is that it also teaches about over-fitting.  
 
 I put in a script that will classify the species based on the inputted information
 
