@@ -267,6 +267,8 @@ Results in
 ![Prediction](https://user-images.githubusercontent.com/47194968/56499510-9cffee80-64fe-11e9-9715-459f90ba416a.PNG)
 
 
+## Conclusion
+
 From the earlier graphs it becomes apparent that there is an overall difference between the different species and their lengths.  While a few within the sample are nearer to a species not their own, overall there is a relatively high degree of certainty when classifying an iris.
 
 A real world application for the theory to classify an item using machine learning is https://cloud.google.com/blog/products/gcp/how-a-japanese-cucumber-farmer-is-using-deep-learning-and-tensorflow.  
