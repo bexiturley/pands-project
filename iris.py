@@ -389,6 +389,42 @@ for i, color in zip(clf.classes_, colors):
 plt.legend()
 plt.show()
 
+from sklearn.datasets import load_iris
+from sklearn.neighbors import KNeighborsClassifier
+
+#code below will make prediction based on the input given by the user:
+
+import numpy as np
+from sklearn import neighbors, datasets
+from sklearn import preprocessing
+ 
+n_neighbors = 6
+ 
+# import data 
+iris = datasets.load_iris()
+ 
+# prepare data
+X = iris.data[:, :2]
+y = iris.target
+h = .02
+ 
+# create an instance of Neighbours Classifier and fit the data.
+clf = neighbors.KNeighborsClassifier(n_neighbors, weights='distance')
+clf.fit(X, y)
+ 
+# make prediction
+sl = input('Enter sepal length (cm): ')
+sw = input('Enter sepal width (cm): ')
+dataClass = clf.predict([[sl,sw]])
+print('Prediction: '),
+ 
+if dataClass == 0:
+ print('Iris Setosa')
+elif dataClass == 1:
+ print('Iris Versicolour')
+else:
+ print('Iris Virginica')
+
 
 # References:
 
@@ -400,3 +436,4 @@ plt.show()
 # https://umap-learn.readthedocs.io/en/latest/basic_usage.html
 # https://uk.mathworks.com/help/stats/box-plots.html, https://datavizcatalogue.com/methods/parallel_coordinates.html, https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html#sphx-glr-auto-examples-datasets-plot-iris-dataset-py
 # https://scikit-learn.org/stable/auto_examples/linear_model/plot_sgd_iris.html#sphx-glr-auto-examples-linear-model-plot-sgd-iris-py, https://gist.github.com/uupaa/f77d2bcf4dc7a294d109
+# https://pythonspot.com/k-nearest-neighbors/, https://www.edureka.co/blog/k-nearest-neighbors-algorithm/
