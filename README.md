@@ -225,14 +225,9 @@ There are not enough columns to give a perfect score: this is apparent when look
 ***
 
 ##  Scikit Learn
-Simple and efficient tools for data mining and data analysis.  It is a free machine learning library provided by Python.  From the investigations I undertook during the course of this project
-I came to the conclusion that all the above graphs helped to show the differences in the petals and sepals of the iris.  Looking at the information ourselves, if we were given a sample iris, we could decide to a relatively high degree of certainintly which species it was.  There is some overlapping at a few stages between some of the samples which will make it trickier to id but overall it should be doable.  
-Following on from this is machine learning.
+Simple and efficient tools for data mining and data analysis.  It is a free machine learning library provided by Python.  
 
-
- This is how machine learning begins.  Taking all the above data it becomes much 
-easier to classify the iris via the differences in lengths and width.  To go one step further is to take the above information see that there is a difference and then put it to use by learning to classify
-the iris not by how it looks but by giving the computer measurements and letting it decide for itself which species the iris belongs to. That is machine learning or supervised learning.  
+  
 
 The data already exists within sickitlearn.  
 
@@ -266,5 +261,12 @@ Following on from this is then letting the computer a key aspect is that it also
 I put in a script that will classify the species based on the inputted information
 
 ![enter](https://user-images.githubusercontent.com/47194968/56499458-5c07da00-64fe-11e9-8c3d-a61365daebc8.PNG)
+
 Results in 
+
 ![Prediction](https://user-images.githubusercontent.com/47194968/56499510-9cffee80-64fe-11e9-9715-459f90ba416a.PNG)
+
+
+From the earlier graphs it becomes apparent that there is an overall difference between the different species and their lengths.  While a few within the sample are nearer to a species not their own, overall there is a relatively high degree of certainty when classifying an iris.
+
+A real world application for the theory to classify an item using machine learning is https://cloud.google.com/blog/products/gcp/how-a-japanese-cucumber-farmer-is-using-deep-learning-and-tensorflow.  
