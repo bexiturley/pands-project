@@ -256,7 +256,6 @@ The dashed lines represent the three OVA classifiers; the background colors show
 The core of many machine learning algorithms is optimization.  Optimization algorithms are used by machine learning algorithms to find a good set of model parameters given a training dataset.  The most common optimization algorithm used in machine learning is stochastic gradient descent.
 SGD is beneficial when it is not possible to process all the data multiple times because your data is huge.
 
-Following on from this is then letting the computer a key aspect is that it also teaches about over-fitting.  
 
 I put in a script that will classify the species based on the inputted information
 
