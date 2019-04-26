@@ -433,7 +433,8 @@ else:
 # https://matplotlib.org/users/pyplot_tutorial.html, https://matplotlib.org/users/pyplot_tutorial.html, https://matplotlib.org/gallery/subplots_axes_and_figures/demo_tight_layout.html
 # https://seaborn.pydata.org/tutorial/color_palettes.html?highlight=palette, https://stackoverflow.com/questions/45862223/use-different-colors-in-scatterplot-for-iris-dataset
 # https://www.kaggle.com/benhamner/python-data-visualizations, https://stackoverflow.com/questions/45721083/unable-to-plot-4-histograms-of-iris-dataset-features-using-matplotlib
-# https://umap-learn.readthedocs.io/en/latest/basic_usage.html
+# https://umap-learn.readthedocs.io/en/latest/basic_usage.html, https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf
 # https://uk.mathworks.com/help/stats/box-plots.html, https://datavizcatalogue.com/methods/parallel_coordinates.html, https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html#sphx-glr-auto-examples-datasets-plot-iris-dataset-py
 # https://scikit-learn.org/stable/auto_examples/linear_model/plot_sgd_iris.html#sphx-glr-auto-examples-linear-model-plot-sgd-iris-py, https://gist.github.com/uupaa/f77d2bcf4dc7a294d109
 # https://pythonspot.com/k-nearest-neighbors/, https://www.edureka.co/blog/k-nearest-neighbors-algorithm/, https://www.youtube.com/watch?v=qIaWozjDyPk
+# https://github.com/
