@@ -273,33 +273,33 @@ From the earlier graphs it becomes apparent that there is an overall difference 
 A real world application for the theory to classify an item using machine learning is https://cloud.google.com/blog/products/gcp/how-a-japanese-cucumber-farmer-is-using-deep-learning-and-tensorflow.  
 
 ## Steps taken when attempting this project.
-1.  *Research by reading up on what the actual data set is and why it is of significance.*
+**1.**  *Research by reading up on what the actual data set is and why it is of significance.*
 
-2. *Planning on the the different steps needed to import, evaluate and code.*
+**2.** *Planning on the the different steps needed to import, evaluate and code.*
 
-3.  *Writing code.*
+**3.**  *Writing code.*
 
-4.  *Regular saves (one mistake I made was to abandon code I at the time deemed unnecessary which later proved to be beneficial).*
+**4.**  *Regular saves (one mistake I made was to abandon code I at the time deemed unnecessary which later proved to be beneficial).*
 
-5.  *Looking up other sources of information including youtube, other github repositories and lecturer videos.  And using it to learn new ways of coding.* 
+**5.**  *Looking up other sources of information including youtube, other github repositories and lecturer videos.  And using it to learn new ways of coding.* 
 
-6.  *Adjusting code to incorporate new ideas I had along the way.*
+**6.**  *Adjusting code to incorporate new ideas I had along the way.*
 
-7.  *Coming to a conclusion about what the data means.*
+**7.**  *Coming to a conclusion about what the data means.*
 
-8.  *Look up more youtube tutorials on markdown and how to increase my knowledge on use of it.*
+**8.**  *Look up more youtube tutorials on markdown and how to increase my knowledge on use of it.*
 
-9.  *Importing the graphs to the mark down file.*
+**9.**  *Importing the graphs to the mark down file.*
 
-10.  *Creating a final draft of the project.*
+**10.**  *Creating a final draft of the project.*
 
-11.  *Realising there was still a lot more to do and re do it.*
+**11.**  *Realising there was still a lot more to do and re do it.*
 
-12.  *Create another final draft.*
+**12.**  *Create another final draft.*
 
-13.  *Look into real world applications of what the Iris data set shows.*
+**13.**  *Look into real world applications of what the Iris data set shows.*
 
-14.  *Conclusion and final thoughts.*
+**14.**  *Conclusion and final thoughts.*
 
 
 
