@@ -436,4 +436,4 @@ else:
 # https://umap-learn.readthedocs.io/en/latest/basic_usage.html
 # https://uk.mathworks.com/help/stats/box-plots.html, https://datavizcatalogue.com/methods/parallel_coordinates.html, https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html#sphx-glr-auto-examples-datasets-plot-iris-dataset-py
 # https://scikit-learn.org/stable/auto_examples/linear_model/plot_sgd_iris.html#sphx-glr-auto-examples-linear-model-plot-sgd-iris-py, https://gist.github.com/uupaa/f77d2bcf4dc7a294d109
-# https://pythonspot.com/k-nearest-neighbors/, https://www.edureka.co/blog/k-nearest-neighbors-algorithm/
+# https://pythonspot.com/k-nearest-neighbors/, https://www.edureka.co/blog/k-nearest-neighbors-algorithm/, https://www.youtube.com/watch?v=qIaWozjDyPk
