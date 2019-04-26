@@ -273,7 +273,7 @@ From the earlier graphs it becomes apparent that there is an overall difference 
 A real world application for the theory to classify an item using machine learning is https://cloud.google.com/blog/products/gcp/how-a-japanese-cucumber-farmer-is-using-deep-learning-and-tensorflow.  
 
 ## Steps taken when attempting this project.
-*Research by reading up on what the actual data set is and why it is of significance.  
+*Research by reading up on what the actual data set is and why it is of significance.*
 
 *Planning on the the different steps needed to import, evaluate and code.
 
@@ -302,4 +302,6 @@ A real world application for the theory to classify an item using machine learni
 *Conclusion and final thoughts.
 
 
+
+## Final Thoughts
 Originally I had no prior knowledge of this data set and was relatively new to the concept of programming.  I read a lot websites trying to get a grasp as to the scope and use of the dataset.  I then started by importing the data myself and looking at it in various ways.  Different kinds of graphs highlighted different aspects of the relationships between the three species.  I then scripted different graphs to show that there was in fact a difference that made classifying the species of iris easier. I again used a lot of websites to learn how to produce the graphs I wanted and watched some youtube tutorials and lecturer videos to explain areas in greater depth when I struggled with a particular concept.  I learned that while it will not always be straight forward to identify for certain which species a specimen belongs to it is possible to narrow the options.  I had to go back and forth getting the code to work and ended up abandoning some of it, which I later came to regret as it would have proved beneficial at a later stage.  When I was finally happy with how the data looked, I created a markdown file.  This one was much larger and more complex than the one I had completed for the problem set.  I found this project frustrating, enjoyable, interesting and very rewarding.  It was a very beneficial learning experience as not only did I start on the path of machine learning, I also realized that there is not only one way to code and there are many ways to work with data to show it in different forms. It is an ongoing process and I often had to return to a problem again and again to fully realise it.  I often found myself thinking about how to amend and improve the data and project. I became more confident with programming and towards the end of the scripting I began to dabble in the machine learning aspect and adapted code whereby lengths are entered and the computer classifies the species of Iris based on the entered information. I wanted to test to see if the code worked. And I was satisfied that it was successful.   
