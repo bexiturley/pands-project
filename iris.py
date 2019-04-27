@@ -427,7 +427,7 @@ else:
 
 
 # References:
-
+# I used the following references when researching and understanding the project:
 # https://www.shanelynn.ie/python-pandas-read_csv-load-data-from-csv-files/, http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.describe.html
 # http://statweb.stanford.edu/~jtaylo/courses/stats202/visualization.html, http://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html
 # https://matplotlib.org/users/pyplot_tutorial.html, https://matplotlib.org/users/pyplot_tutorial.html, https://matplotlib.org/gallery/subplots_axes_and_figures/demo_tight_layout.html
@@ -437,4 +437,4 @@ else:
 # https://uk.mathworks.com/help/stats/box-plots.html, https://datavizcatalogue.com/methods/parallel_coordinates.html, https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html#sphx-glr-auto-examples-datasets-plot-iris-dataset-py
 # https://scikit-learn.org/stable/auto_examples/linear_model/plot_sgd_iris.html#sphx-glr-auto-examples-linear-model-plot-sgd-iris-py, https://gist.github.com/uupaa/f77d2bcf4dc7a294d109
 # https://pythonspot.com/k-nearest-neighbors/, https://www.edureka.co/blog/k-nearest-neighbors-algorithm/, https://www.youtube.com/watch?v=qIaWozjDyPk
-# https://github.com/
+# https://github.com/, https://github.com/mtthss/clustering-iris-dataset, https://www.kaggle.com/aschakra/decision-tree-classification-for-iris-dataset, 

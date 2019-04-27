@@ -307,3 +307,30 @@ A real world application for the theory to classify an item using machine learni
 
 ## Final Thoughts
 Originally I had no prior knowledge of this data set and was relatively new to the concept of programming.  I researched background information on numerous websites trying to get a grasp as to the scope and use of the dataset.  I then started by importing the data myself and looking at it in various ways.  Different kinds of graphs highlighted different aspects of the relationships between the three species.  I then scripted different graphs to show that there was in fact a difference between each species which made classifying the species of Iris easier. I furthered my understanding on the creation of graphs from youtube tutorials and lecturer videos which explained areas in greater depth when I struggled with a particular concept.  I learned that while it will not always be straight forward to absolutely identify which species a specimen belongs to, it is possible to narrow the options.  It was necessary for me to go back and forth numerous times in an effort to get the code to work and I ended up abandoning some of it, which I later came to regret as it would have proved beneficial at a later stage.  When I was finally happy with how the data looked, I created a markdown file.  This one was much larger and more complex than the one I had completed previously for the problem set.  I found this project frustrating, enjoyable, interesting and very rewarding.  It was a very beneficial learning experience as not only did I start on the path of machine learning, I also realized that there is not only one way to code and there are many ways to work with data to show it in different forms. It is an ongoing process and I often had to return to a problem again and again to fully realise it.  I often found myself thinking about how to amend and improve the data and project. I became more confident with programming towards the end of the scripting.  I began to dabble in the machine learning aspect and adapted code whereby sepal length and width are entered and the computer classifies the species of Iris based on the entered information. I wanted to test to see if the code worked. The outcome was as predicted so thereby a success.  
+
+######References:
+I used the following references when researching and understanding the project:
+https://www.shanelynn.ie/python-pandas-read_csv-load-data-from-csv-files/
+http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.describe.html
+http://statweb.stanford.edu/~jtaylo/courses/stats202/visualization.html
+http://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html
+https://matplotlib.org/users/pyplot_tutorial.html
+https://matplotlib.org/users/pyplot_tutorial.html 
+https://matplotlib.org/gallery/subplots_axes_and_figures/demo_tight_layout.html
+https://seaborn.pydata.org/tutorial/color_palettes.html?highlight=palette
+https://stackoverflow.com/questions/45862223/use-different-colors-in-scatterplot-for-iris-dataset
+https://www.kaggle.com/benhamner/python-data-visualizations
+https://stackoverflow.com/questions/45721083/unable-to-plot-4-histograms-of-iris-dataset-features-using-matplotlib
+https://umap-learn.readthedocs.io/en/latest/basic_usage.html
+https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf
+https://uk.mathworks.com/help/stats/box-plots.html
+https://datavizcatalogue.com/methods/parallel_coordinates.html
+https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html#sphx-glr-auto-examples-datasets-plot-iris-dataset-py
+https://scikit-learn.org/stable/auto_examples/linear_model/plot_sgd_iris.html#sphx-glr-auto-examples-linear-model-plot-sgd-iris-py 
+https://gist.github.com/uupaa/f77d2bcf4dc7a294d109
+https://pythonspot.com/k-nearest-neighbors/
+https://www.edureka.co/blog/k-nearest-neighbors-algorithm/
+https://www.youtube.com/watch?v=qIaWozjDyPk
+https://github.com/
+https://github.com/mtthss/clustering-iris-dataset
+https://www.kaggle.com/aschakra/decision-tree-classification-for-iris-dataset
