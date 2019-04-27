@@ -217,7 +217,7 @@ plt.show()
 
 
 
-# Here I am using Seaborn to create scatterplot graphs to give an idea of what the data will show.
+# Here Seaborn creates scatterplot graphs to give an idea of what the data will show.
 # data into a pandas dataframe first. Creates 2D data view.
 from sklearn.datasets import load_iris, load_digits
 from sklearn.model_selection import train_test_split
@@ -428,7 +428,7 @@ else:
 
 # References:
 # I used the following references when researching and understanding the project:
-# https://www.shanelynn.ie/python-pandas-read_csv-load-data-from-csv-files/, http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.describe.html
+# https://www.shanelynn.ie/python-pandas-read_csv-load-data-from-csv-files/, https://en.wikipedia.org/wiki/Iris_flower_data_set, http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.describe.html
 # http://statweb.stanford.edu/~jtaylo/courses/stats202/visualization.html, http://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html
 # https://matplotlib.org/users/pyplot_tutorial.html, https://matplotlib.org/users/pyplot_tutorial.html, https://matplotlib.org/gallery/subplots_axes_and_figures/demo_tight_layout.html
 # https://seaborn.pydata.org/tutorial/color_palettes.html?highlight=palette, https://stackoverflow.com/questions/45862223/use-different-colors-in-scatterplot-for-iris-dataset
@@ -438,3 +438,4 @@ else:
 # https://scikit-learn.org/stable/auto_examples/linear_model/plot_sgd_iris.html#sphx-glr-auto-examples-linear-model-plot-sgd-iris-py, https://gist.github.com/uupaa/f77d2bcf4dc7a294d109
 # https://pythonspot.com/k-nearest-neighbors/, https://www.edureka.co/blog/k-nearest-neighbors-algorithm/, https://www.youtube.com/watch?v=qIaWozjDyPk
 # https://github.com/, https://github.com/mtthss/clustering-iris-dataset, https://www.kaggle.com/aschakra/decision-tree-classification-for-iris-dataset, 
+# https://github.com/Msanjayds/Scikit-learn/blob/master/KNN%20on%20Iris%20Datset.ipynb, https://github.com/RitRa/Project2018-iris,  https://cloud.google.com/blog/products/gcp/how-a-japanese-cucumber-farmer-is-using-deep-learning-and-tensorflow.  

@@ -313,6 +313,8 @@ I used the following references when researching and understanding the project:
 
 https://www.shanelynn.ie/python-pandas-read_csv-load-data-from-csv-files/
 
+https://en.wikipedia.org/wiki/Iris_flower_data_set
+
 http://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.describe.html
 
 http://statweb.stanford.edu/~jtaylo/courses/stats202/visualization.html
@@ -362,3 +364,5 @@ https://www.kaggle.com/aschakra/decision-tree-classification-for-iris-dataset
 https://github.com/Msanjayds/Scikit-learn/blob/master/KNN%20on%20Iris%20Datset.ipynb 
 
 https://github.com/RitRa/Project2018-iris
+
+https://cloud.google.com/blog/products/gcp/how-a-japanese-cucumber-farmer-is-using-deep-learning-and-tensorflow.  
