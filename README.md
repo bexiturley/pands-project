@@ -38,9 +38,9 @@ The dataset contains a set of 150 records under 5 attributes -
 3. petal length in cm 
 4. petal width in cm 
 5. Species: 
-- [ ]  Iris Setosa 
-- [ ] Iris Versicolour 
-- [ ] Iris Virginica
+    - [ ] Iris Setosa 
+    - [ ] Iris Versicolour 
+    - [ ] Iris Virginica
 
 
 ***
@@ -60,7 +60,7 @@ Pandas is a software library written for the Python programming language for dat
 
 ***
 
-## Data Import
+## Data import
 Import the iris.csv using the panda library.
 
 *data=np.genfromtxt('iris.csv', delimiter=',')*
@@ -220,7 +220,7 @@ More scatter plots to create an array of 2d images.
 
 ![](https://github.com/bexiturley/pands-project/blob/master/Figure_13.png)
 
-There are not enough columns to give a perfect score: this is apparent when looking at the scatterplots, they overlap and run into each other.  So any machine-learning approach that gets a perfect score can be regarded as flawed.  The iris data can be used to train and obtain a high accuracy.
+
 
 ***
 
@@ -229,20 +229,22 @@ Simple and efficient tools for data mining and data analysis.  It is a free mach
 
   
 
-The data already exists within sickitlearn.  
+The data already exists within scikitlearn.  
 
 
 
 ![](https://github.com/bexiturley/pands-project/blob/master/Figure_15.png)
 
 I used https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html#sphx-glr-auto-examples-datasets-plot-iris-dataset-py
-to show the graph in a 3d format.  It is way beyond my current ability to plot this myself but I thought it was a fantastic to be able to manipulate the data to produce a 3D graph.  
+to show the graph in a 3D format.  It is way beyond my current ability to plot this myself but I thought it was a fantastic to be able to manipulate the data to produce a 3D graph.  
 ###### Spin the scatterplot to see more clearly the relationships between the red and green points. This function works when the iris.py script is run in Python.
 
 Following this graph is a 2D representative of it.
 
 ![](https://github.com/bexiturley/pands-project/blob/master/Figure_14.png)
 
+
+To go a bit further with scikit, some have used it to create supervised learning with K-Nearest Neighbours (KNN).  With this the data is split with some of it being used to train the system and the remainder to test it. There are not enough columns to give a perfect score: this is apparent when looking at the scatterplots, they overlap and run into each other.  So any machine-learning approach that gets a perfect score can be regarded as flawed.  The iris data can be used to train and obtain a high accuracy.  Examples of it in use can be viewed here: https://github.com/Msanjayds/Scikit-learn/blob/master/KNN%20on%20Iris%20Datset.ipynb and https://github.com/RitRa/Project2018-iris.  I used a little of KNN at the last script at the end of the project to classify the species based on inputted data.
 ***
 
 ## Decision Surface of multi-class SGD
@@ -304,4 +306,4 @@ A real world application for the theory to classify an item using machine learni
 
 
 ## Final Thoughts
-Originally I had no prior knowledge of this data set and was relatively new to the concept of programming.  I researched background information on numerous websites trying to get a grasp as to the scope and use of the dataset.  I then started by importing the data myself and looking at it in various ways.  Different kinds of graphs highlighted different aspects of the relationships between the three species.  I then scripted different graphs to show that there was in fact a difference between each species which made classifying the species of Iris easier. I furthered my understanding on the creation of graphs from youtube tutorials and lecturer videos which explained areas in greater depth when I struggled with a particular concept.  I learned that while it will not always be straight forward to absolutely identify which species a specimen belongs to, it is possible to narrow the options.  It was necessary for me to go back and forth numerous times in an effort to get the code to work and I ended up abandoning some of it, which I later came to regret as it would have proved beneficial at a later stage.  When I was finally happy with how the data looked, I created a markdown file.  This one was much larger and more complex than the one I had completed previously for the problem set.  I found this project frustrating, enjoyable, interesting and very rewarding.  It was a very beneficial learning experience as not only did I start on the path of machine learning, I also realized that there is not only one way to code and there are many ways to work with data to show it in different forms. It is an ongoing process and I often had to return to a problem again and again to fully realise it.  I often found myself thinking about how to amend and improve the data and project. I became more confident with programming towards the end of the scripting.  I began to dabble in the machine learning aspect and adapted code whereby sepal length and width are entered and the computer classifies the species of Iris based on the entered information. I wanted to test to see if the code worked. The outcome was as predicted so thereby a success.
+Originally I had no prior knowledge of this data set and was relatively new to the concept of programming.  I researched background information on numerous websites trying to get a grasp as to the scope and use of the dataset.  I then started by importing the data myself and looking at it in various ways.  Different kinds of graphs highlighted different aspects of the relationships between the three species.  I then scripted different graphs to show that there was in fact a difference between each species which made classifying the species of Iris easier. I furthered my understanding on the creation of graphs from youtube tutorials and lecturer videos which explained areas in greater depth when I struggled with a particular concept.  I learned that while it will not always be straight forward to absolutely identify which species a specimen belongs to, it is possible to narrow the options.  It was necessary for me to go back and forth numerous times in an effort to get the code to work and I ended up abandoning some of it, which I later came to regret as it would have proved beneficial at a later stage.  When I was finally happy with how the data looked, I created a markdown file.  This one was much larger and more complex than the one I had completed previously for the problem set.  I found this project frustrating, enjoyable, interesting and very rewarding.  It was a very beneficial learning experience as not only did I start on the path of machine learning, I also realized that there is not only one way to code and there are many ways to work with data to show it in different forms. It is an ongoing process and I often had to return to a problem again and again to fully realise it.  I often found myself thinking about how to amend and improve the data and project. I became more confident with programming towards the end of the scripting.  I began to dabble in the machine learning aspect and adapted code whereby sepal length and width are entered and the computer classifies the species of Iris based on the entered information. I wanted to test to see if the code worked. The outcome was as predicted so thereby a success.  
