@@ -18,10 +18,10 @@ See here for the instructions (https://github.com/ianmcloughlin/project-pands/ra
 <p align="center">
 <img src=https://github.com/bexiturley/pands-project/blob/master/ronald-fisher.jpg width="200" height="250">
 
-Sir Ronald Aylmer Fisher was a statistician who studied in Cambridge.  Throughout his life he published many texts which were significant in the field of statistics.  This included Statistical Methods for Research Workers (1925) which was a handbook for the methods for the design and analysis of experiments. The contributions Fisher made included the development of methods suitable for small samples and the discovery of the precise distributions of many sample statistics. Fisher published “The design of experiments” (1935) and “Statistical tables” (1947). His books had a huge effect on agricultural research as they described the methods for evaluating the results of small sample experiments and for so laying our experimental trials as to minimise the disturbances due to heterogeneity of soils and the unavoidable irregularity of biological material. This method was used throughout the world.  In 1930, he published his theories about gene dominance and fitness which in The Genetical Theory of Natural Selection. 
+Sir Ronald Aylmer Fisher was a statistician who studied in Cambridge.  Throughout his life he published many texts which were significant in the field of statistics.  This included Statistical Methods for Research Workers (1925) which was a handbook for the methods for the design and analysis of experiments. The contributions Fisher made included the development of methods suitable for small samples and the discovery of the precise distributions of many sample statistics. Fisher published “The design of experiments” (1935) and “Statistical tables” (1947). His books had a huge effect on agricultural research as they described the methods for evaluating the results of small sample experiments and so laying out experimental trials as to minimise the disturbances due to heterogeneity of soils and the unavoidable irregularity of biological material. This method was used throughout the world.  In 1930, he published his theories about gene dominance and fitness in The Genetical Theory of Natural Selection. 
 In 1936 Fisher authored the paper “The use of multiple measurements in taxonomic problems” as an example of linear discriminant analysis.  The basic premise of LDA is that it tries to maximise the separation of two or more groups of samples.  https://www.youtube.com/watch?v=azXCzI57Yfc
 
-Fisher’s Iris Dataset refers to three species of iris; Iris Setosa, Iris Versicolour and Iris Virginica.  50 random samples of each variation of the Iris were taken with measurements of the petals and sepals both of their width and length.  All the data was looked at to create five columns in this dataset with the following variable names: Sepal.length, Sepal.width, Petal.length, Petal.width, and Species.  The first four variables are real measurements made in centimetres. Two of the three species were collected in the Gaspé Peninsula, all from the same pasture, and picked on the same day and measured at the same time by the same person with the same apparatus.  Fisher attempted to determine if it was possible to classify which species a flower belonged to from looking at the lengths and width of the petals and sepals. Here is a link to his actual paper on it http://rcs.chemometrics.ru/Tutorials/classification/Fisher.pdf
+Fisher’s Iris Dataset refers to three species of iris; Iris Setosa, Iris Versicolour and Iris Virginica.  50 random samples of each variation of the Iris were taken.  Measurements of the petals and sepals width and length were recorded.  All the data was looked at to create five columns in this dataset with the following variable names: Sepal length, Sepal width, Petal length, Petal width, and Species.  The first four variables are real measurements made in centimetres. Two of the three species were collected in the Gaspé Peninsula, all from the same pasture, and picked on the same day and measured at the same time by the same person with the same apparatus.  Fisher attempted to determine if it was possible to classify which species a flower belonged to from looking at the lengths and width of the petals and sepals. Here is a link to his actual paper on it http://rcs.chemometrics.ru/Tutorials/classification/Fisher.pdf
 
  :sparkles: It is also known as Andersons dataset as Edgar Anderson collected the data.  :sparkles: 
 
@@ -56,19 +56,19 @@ Matplotlib is a plotting library for the Python programming language and its num
 
 Scikit-learn is a free software machine learning library for the Python programming language. It features various classification, regression and clustering algorithms.
 
-pandas is a software library written for the Python programming language for data manipulation and analysis.
+Pandas is a software library written for the Python programming language for data manipulation and analysis.
 
 ***
 
 ## Data Import
-Import the iris.csv using the panda library 
+Import the iris.csv using the panda library.
 
 *data=np.genfromtxt('iris.csv', delimiter=',')*
 *columns = ['sepal_length', 'sepal_width' , 'petal_length', 'petal_width', 'species']*
 
 
 ## Quick look at the data
-Print out all the information grouped by column and calculate average of each column
+Print out all the information grouped by column and calculate average of each column.
 
 *firstcol = data[:,0]*
 *meanfirstool = np.mean(data[:,0])*
@@ -86,7 +86,7 @@ Print out all the information grouped by column and calculate average of each co
 *meanfourtool = np.mean(data[:,3])*
 *print ("Average of fourth column is:", meanfourtool)*
 
-Print out the smallest and largest value in each of the 4 columns
+Print out the smallest and largest value in each of the 4 columns.
 *print (firstcol)*
 
 *print (np.min(firstcol))*
@@ -114,7 +114,7 @@ Print out the smallest and largest value in each of the 4 columns
 ***
 
 ## More averages of the four columns 
-Including how many items there are per columns, the mean, minimum and maximum.  I know this has already been partly covered already but I liked to try different ways to view the same information via seaborn.
+Including how many items there are per column, the mean, minimum and maximum.  I know this has already been partly covered already but I liked to try different ways to view the same information via seaborn.
 
 
 
@@ -123,14 +123,14 @@ Including how many items there are per columns, the mean, minimum and maximum.  
 *print(data.describe())*
 
 
-This prints the same information but in a linear format rather than tabular.  Again there is no real need for it but it was my own curiorisity to see the different way to view the information.
+This prints the same information but in a linear format rather than tabular.  Again there is no real need for it but I was curious to see the different ways the information could be viewed.
 *summary = data.describe()*
 *summary = summary.transpose()*
 *print (summary.head())*
 
 ***
 
-## Printing the first 5 columns of the information from the seaborne’s builtin dataset . 
+## Printing the first 5 columns of the information from the seaborne’s builtin dataset 
 
 *data = sns.load_dataset("iris")*
 *print(data.head())*
@@ -145,7 +145,7 @@ This prints the same information but in a linear format rather than tabular.  Ag
 
 ***
 
-## The different names of the Iris and how many there is 
+## The different names of the Iris and the number of them 
 
 *(data['species'].unique())*
 *print(data.groupby('species').size())*
@@ -169,11 +169,11 @@ First the Sepal Length, Sepal Width, Petal Length and finally Petal Width.  Thes
 
 At first glance it appears that there is a wide variance in the sizes of of the petals and sepals and there is no way to distinguish between the different species of Iris.
 
-To get more detail I then reproduced the four histograms but this time I gave each species a different colour to more easier differentiate between them.  And all 4 were placed on the one page, rather than a page each.  
+To get more detail I then reproduced the four histograms but this time I gave each species a different colour to make it easier to differentiate between them.  All 4 were placed on the one page, rather than a page each.  
 
 ![Histograph](https://github.com/bexiturley/pands-project/blob/master/Figure_5.png)
 
-Here it becomes more apparent that there is a distinct difference between the three Iris.
+Here it becomes more apparent that there is a distinct difference between the three Iris types.
 
 ***
 
@@ -194,27 +194,27 @@ Again it can be seen that each species have distinct properties with relation to
 
 ***
 
-## Parallel coordinates. 
+## Parallel coordinates
 
 Are a common way of visualizing high-dimensional geometry and analyzing multivariate data.  In a Parallel Coordinates Plot, each variable is given its own axis and all the axes are placed in parallel to each other. Each axis can have a different scale, as each variable works off a different unit of measurement, or all the axes can be normalised to keep all the scales uniform. 
 Values are plotted as a series of lines that connected across all the axes. This means that each line is a collection of points placed on each axis, that have all been connected together.
 
 ![](https://github.com/bexiturley/pands-project/blob/master/Figure_10.png)
 
-It can be observed that each species (shown in different colors) has a discriminant profiles when considering petal length and width, or that Iris Setosa (here in grey) are more homogeneous in regard to petal length (i.e. less of a variance).
+It can be observed that each species (shown in different colors) has a discriminant profile when considering petal length and width, or that Iris Setosa (here in grey) are more homogeneous in regard to petal length (i.e. less of a variance).
 
 ***
 
 ## Scatterplots
 
-Scatter plots are similar to line graphs in that they use horizontal and vertical axes to plot data points. However, they have a very specific purpose. Scatter plots show how much one variable is affected by another. The relationship between two variables is called their correlation .
+Scatterplots are similar to line graphs in that they use horizontal and vertical axes to plot data points. However, they have a very specific purpose. Scatterplots show how much one variable is affected by another. The relationship between two variables is called their correlation .
 
 
 ![](https://github.com/bexiturley/pands-project/blob/master/Figure_11.png)
 
 ![](https://github.com/bexiturley/pands-project/blob/master/Figure_12.png)
 
-It is quite apparent that the points belong to different groups.  Giving each species of Iris a different colour means it is much easier to see the groupings than if only one colour was used.  This will make separating the classes easier.  The cluster of Setosa species is separately clustered from the rest.  While Virginica and Versicolor are also separate, it is not to the same degree.
+It is quite apparent that the points belong to different groups.  Giving each species of Iris a different colour means it is much easier to see the groupings rather than only one colour being used.  This will make separating the classes easier.  The Setosa species is separately clustered from the rest.  While Virginica and Versicolor are also separate, it is not to the same degree.
 
 More scatter plots to create an array of 2d images.
 
@@ -236,10 +236,10 @@ The data already exists within sickitlearn.
 ![](https://github.com/bexiturley/pands-project/blob/master/Figure_15.png)
 
 I used https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html#sphx-glr-auto-examples-datasets-plot-iris-dataset-py
-to show the graph in a 3d format.  It is way beyond my current ability to plot this myself but I thought it was a fantastic to be able to manipulate the data to produce a 3d graph.  
+to show the graph in a 3d format.  It is way beyond my current ability to plot this myself but I thought it was a fantastic to be able to manipulate the data to produce a 3D graph.  
 ###### Spin the scatterplot to see more clearly the relationships between the red and green points. This function works when the iris.py script is run in Python.
 
-Following this graph is a 2d representative of it.
+Following this graph is a 2D representative of it.
 
 ![](https://github.com/bexiturley/pands-project/blob/master/Figure_14.png)
 
