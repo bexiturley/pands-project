@@ -334,3 +334,5 @@ https://www.youtube.com/watch?v=qIaWozjDyPk
 https://github.com/
 https://github.com/mtthss/clustering-iris-dataset
 https://www.kaggle.com/aschakra/decision-tree-classification-for-iris-dataset
+https://github.com/Msanjayds/Scikit-learn/blob/master/KNN%20on%20Iris%20Datset.ipynb 
+https://github.com/RitRa/Project2018-iris
